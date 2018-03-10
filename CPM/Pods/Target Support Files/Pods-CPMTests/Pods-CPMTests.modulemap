@@ -1,0 +1,6 @@
+framework module Pods_CPMTests {
+  umbrella header "Pods-CPMTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
