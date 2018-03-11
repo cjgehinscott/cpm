@@ -13,8 +13,6 @@ class APIManager: NSObject {
     static let shared = APIManager()
     private var session = URLSession(configuration: .default)
     private let baseUrl = "https://api.github.com/"
-    //Using static OAuth Token for demo purposes. This token would be acquired via login flow that is defined by whatever the service requirements are
-    private let testAPIToken = "0e3e6e10d8e05bbc228462d260b29a733cedf990"
     
     //MARK: - Search
     private var searchTask: URLSessionDataTask?
@@ -24,10 +22,8 @@ class APIManager: NSObject {
         if var urlComponents = URLComponents(string: baseUrl+searchPath){
             urlComponents.query = "q=user:\(username ?? "")"
             guard let url = urlComponents.url else { return }
-            var urlRequest = URLRequest(url: url)
-            urlRequest.addValue("Bearer \(testAPIToken)", forHTTPHeaderField: "Authorization")
             
-            searchTask = session.dataTask(with: urlRequest){ data, response, error  in
+            searchTask = session.dataTask(with: url){ data, response, error  in
                 if error != nil{
                     completion?(nil,CPError(title: "Data Task Error", message: error?.localizedDescription, code: nil))
                 }else if let data = data, let response = response as? HTTPURLResponse{
