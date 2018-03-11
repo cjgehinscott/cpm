@@ -13,6 +13,16 @@
 		239C2B6120542BA3006B1D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 239C2B6020542BA3006B1D46 /* Assets.xcassets */; };
 		239C2B6420542BA3006B1D46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239C2B6220542BA3006B1D46 /* LaunchScreen.storyboard */; };
 		239C2B6F20542BA3006B1D46 /* CPMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C2B6E20542BA3006B1D46 /* CPMTests.swift */; };
+		239C2B7D20542D91006B1D46 /* CPSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C2B7C20542D91006B1D46 /* CPSearchVC.swift */; };
+		239C2B8020542DBF006B1D46 /* UIViewController+(Alert).swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C2B7F20542DBF006B1D46 /* UIViewController+(Alert).swift */; };
+		239C2B8420542EA7006B1D46 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 239C2B8320542EA7006B1D46 /* Localizable.strings */; };
+		239C2B8620542EEF006B1D46 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C2B8520542EEF006B1D46 /* Strings.swift */; };
+		239C2B8820543380006B1D46 /* CPSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C2B8720543380006B1D46 /* CPSearchController.swift */; };
+		239C2B8B205488C5006B1D46 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C2B8A205488C5006B1D46 /* APIManager.swift */; };
+		239C2B8D20549709006B1D46 /* CPRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C2B8C20549709006B1D46 /* CPRepository.swift */; };
+		239C2B8F2054979F006B1D46 /* CPOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C2B8E2054979F006B1D46 /* CPOwner.swift */; };
+		239C2B9120549A6C006B1D46 /* CPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C2B9020549A6C006B1D46 /* CPError.swift */; };
+		239C2B932054A920006B1D46 /* APIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C2B922054A920006B1D46 /* APIManagerTests.swift */; };
 		590CC7313565642C526F5A2E /* Pods_CPMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C760B662B5159A1294624847 /* Pods_CPMTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +46,16 @@
 		239C2B6A20542BA3006B1D46 /* CPMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CPMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		239C2B6E20542BA3006B1D46 /* CPMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPMTests.swift; sourceTree = "<group>"; };
 		239C2B7020542BA3006B1D46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		239C2B7C20542D91006B1D46 /* CPSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPSearchVC.swift; sourceTree = "<group>"; };
+		239C2B7F20542DBF006B1D46 /* UIViewController+(Alert).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+(Alert).swift"; sourceTree = "<group>"; };
+		239C2B8320542EA7006B1D46 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		239C2B8520542EEF006B1D46 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		239C2B8720543380006B1D46 /* CPSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPSearchController.swift; sourceTree = "<group>"; };
+		239C2B8A205488C5006B1D46 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		239C2B8C20549709006B1D46 /* CPRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPRepository.swift; sourceTree = "<group>"; };
+		239C2B8E2054979F006B1D46 /* CPOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPOwner.swift; sourceTree = "<group>"; };
+		239C2B9020549A6C006B1D46 /* CPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPError.swift; sourceTree = "<group>"; };
+		239C2B922054A920006B1D46 /* APIManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTests.swift; sourceTree = "<group>"; };
 		246390EA67714A1B9F5097D3 /* Pods-CPM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CPM/Pods-CPM.debug.xcconfig"; sourceTree = "<group>"; };
 		27DC90D42E1991C76B0C64A1 /* Pods-CPMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CPMTests/Pods-CPMTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4916B920DCE9FFC0416D294D /* Pods-CPM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPM.release.xcconfig"; path = "Pods/Target Support Files/Pods-CPM/Pods-CPM.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +107,12 @@
 		239C2B5820542BA3006B1D46 /* CPM */ = {
 			isa = PBXGroup;
 			children = (
+				239C2B89205488B0006B1D46 /* Networking */,
+				239C2B8120542E84006B1D46 /* Constants */,
+				239C2B7E20542D9B006B1D46 /* Categories */,
+				239C2B7B20542D30006B1D46 /* Controller */,
+				239C2B7A20542D28006B1D46 /* View */,
+				239C2B7920542D1B006B1D46 /* Model */,
 				239C2B5920542BA3006B1D46 /* AppDelegate.swift */,
 				239C2B5D20542BA3006B1D46 /* Main.storyboard */,
 				239C2B6020542BA3006B1D46 /* Assets.xcassets */,
@@ -101,8 +127,68 @@
 			children = (
 				239C2B6E20542BA3006B1D46 /* CPMTests.swift */,
 				239C2B7020542BA3006B1D46 /* Info.plist */,
+				239C2B922054A920006B1D46 /* APIManagerTests.swift */,
 			);
 			path = CPMTests;
+			sourceTree = "<group>";
+		};
+		239C2B7920542D1B006B1D46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				239C2B8C20549709006B1D46 /* CPRepository.swift */,
+				239C2B8E2054979F006B1D46 /* CPOwner.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		239C2B7A20542D28006B1D46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				239C2B7C20542D91006B1D46 /* CPSearchVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		239C2B7B20542D30006B1D46 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				239C2B8720543380006B1D46 /* CPSearchController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		239C2B7E20542D9B006B1D46 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				239C2B7F20542DBF006B1D46 /* UIViewController+(Alert).swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		239C2B8120542E84006B1D46 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				239C2B8220542E8F006B1D46 /* Strings */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		239C2B8220542E8F006B1D46 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				239C2B8320542EA7006B1D46 /* Localizable.strings */,
+				239C2B8520542EEF006B1D46 /* Strings.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		239C2B89205488B0006B1D46 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				239C2B8A205488C5006B1D46 /* APIManager.swift */,
+				239C2B9020549A6C006B1D46 /* CPError.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		E8D069784B4EE7C455F41E79 /* Frameworks */ = {
@@ -215,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				239C2B6420542BA3006B1D46 /* LaunchScreen.storyboard in Resources */,
+				239C2B8420542EA7006B1D46 /* Localizable.strings in Resources */,
 				239C2B6120542BA3006B1D46 /* Assets.xcassets in Resources */,
 				239C2B5F20542BA3006B1D46 /* Main.storyboard in Resources */,
 			);
@@ -333,7 +420,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				239C2B8B205488C5006B1D46 /* APIManager.swift in Sources */,
+				239C2B9120549A6C006B1D46 /* CPError.swift in Sources */,
+				239C2B8820543380006B1D46 /* CPSearchController.swift in Sources */,
 				239C2B5A20542BA3006B1D46 /* AppDelegate.swift in Sources */,
+				239C2B8D20549709006B1D46 /* CPRepository.swift in Sources */,
+				239C2B7D20542D91006B1D46 /* CPSearchVC.swift in Sources */,
+				239C2B8620542EEF006B1D46 /* Strings.swift in Sources */,
+				239C2B8F2054979F006B1D46 /* CPOwner.swift in Sources */,
+				239C2B8020542DBF006B1D46 /* UIViewController+(Alert).swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				239C2B932054A920006B1D46 /* APIManagerTests.swift in Sources */,
 				239C2B6F20542BA3006B1D46 /* CPMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
