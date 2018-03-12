@@ -13,6 +13,8 @@ class APIManager: NSObject {
     static let shared = APIManager()
     private var session = URLSession(configuration: .default)
     private let baseUrl = "https://api.github.com/"
+    //Demo gitHub token. We would normally get an OAuth token through production server Authentication requirements, but due to time constraints and no specification in the interview test requirements for a login flow we are just using a personal gitHub token. Any valid gitHub access token can be placed here.
+    private let demoGithubToken = "<GitHubAccessToken>"
     
     //MARK: - Search
     private var searchTask: URLSessionDataTask?
@@ -22,8 +24,9 @@ class APIManager: NSObject {
         if var urlComponents = URLComponents(string: baseUrl+searchPath){
             urlComponents.query = "q=user:\(username ?? "")"
             guard let url = urlComponents.url else { return }
-            
-            searchTask = session.dataTask(with: url){ data, response, error  in
+            var urlRequest = URLRequest(url: url)
+            urlRequest.addValue("token \(demoGithubToken)", forHTTPHeaderField: "Authorization")
+            searchTask = session.dataTask(with: urlRequest){ data, response, error  in
                 if error != nil{
                     completion?(nil,CPError(title: "Data Task Error", message: error?.localizedDescription, code: nil))
                 }else if let data = data, let response = response as? HTTPURLResponse{

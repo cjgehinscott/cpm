@@ -23,6 +23,10 @@
 		239C2B8F2054979F006B1D46 /* CPOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C2B8E2054979F006B1D46 /* CPOwner.swift */; };
 		239C2B9120549A6C006B1D46 /* CPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C2B9020549A6C006B1D46 /* CPError.swift */; };
 		239C2B932054A920006B1D46 /* APIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C2B922054A920006B1D46 /* APIManagerTests.swift */; };
+		239C2B972055E7F6006B1D46 /* CPSearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C2B962055E7F6006B1D46 /* CPSearchHeaderView.swift */; };
+		239C2B9A2055E869006B1D46 /* CPSearchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 239C2B992055E869006B1D46 /* CPSearchHeaderView.xib */; };
+		239C2BA22055FCF8006B1D46 /* CPDateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C2BA12055FCF8006B1D46 /* CPDateHelper.swift */; };
+		239C2BA52055FEE7006B1D46 /* CPRepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C2BA42055FEE7006B1D46 /* CPRepositoryCell.swift */; };
 		590CC7313565642C526F5A2E /* Pods_CPMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C760B662B5159A1294624847 /* Pods_CPMTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +60,10 @@
 		239C2B8E2054979F006B1D46 /* CPOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPOwner.swift; sourceTree = "<group>"; };
 		239C2B9020549A6C006B1D46 /* CPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPError.swift; sourceTree = "<group>"; };
 		239C2B922054A920006B1D46 /* APIManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTests.swift; sourceTree = "<group>"; };
+		239C2B962055E7F6006B1D46 /* CPSearchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPSearchHeaderView.swift; sourceTree = "<group>"; };
+		239C2B992055E869006B1D46 /* CPSearchHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CPSearchHeaderView.xib; sourceTree = "<group>"; };
+		239C2BA12055FCF8006B1D46 /* CPDateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPDateHelper.swift; sourceTree = "<group>"; };
+		239C2BA42055FEE7006B1D46 /* CPRepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPRepositoryCell.swift; sourceTree = "<group>"; };
 		246390EA67714A1B9F5097D3 /* Pods-CPM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CPM/Pods-CPM.debug.xcconfig"; sourceTree = "<group>"; };
 		27DC90D42E1991C76B0C64A1 /* Pods-CPMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CPMTests/Pods-CPMTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4916B920DCE9FFC0416D294D /* Pods-CPM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPM.release.xcconfig"; path = "Pods/Target Support Files/Pods-CPM/Pods-CPM.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +115,7 @@
 		239C2B5820542BA3006B1D46 /* CPM */ = {
 			isa = PBXGroup;
 			children = (
+				239C2BA02055FCDE006B1D46 /* Utilities */,
 				239C2B89205488B0006B1D46 /* Networking */,
 				239C2B8120542E84006B1D46 /* Constants */,
 				239C2B7E20542D9B006B1D46 /* Categories */,
@@ -144,7 +153,7 @@
 		239C2B7A20542D28006B1D46 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				239C2B7C20542D91006B1D46 /* CPSearchVC.swift */,
+				239C2B942055E7A5006B1D46 /* Search */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,7 +161,7 @@
 		239C2B7B20542D30006B1D46 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				239C2B8720543380006B1D46 /* CPSearchController.swift */,
+				239C2B952055E7B3006B1D46 /* Search */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,6 +198,49 @@
 				239C2B9020549A6C006B1D46 /* CPError.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		239C2B942055E7A5006B1D46 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				239C2BA32055FEC2006B1D46 /* TableViewCell */,
+				239C2B982055E850006B1D46 /* Header */,
+				239C2B7C20542D91006B1D46 /* CPSearchVC.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		239C2B952055E7B3006B1D46 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				239C2B8720543380006B1D46 /* CPSearchController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		239C2B982055E850006B1D46 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				239C2B962055E7F6006B1D46 /* CPSearchHeaderView.swift */,
+				239C2B992055E869006B1D46 /* CPSearchHeaderView.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		239C2BA02055FCDE006B1D46 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				239C2BA12055FCF8006B1D46 /* CPDateHelper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		239C2BA32055FEC2006B1D46 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				239C2BA42055FEE7006B1D46 /* CPRepositoryCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		E8D069784B4EE7C455F41E79 /* Frameworks */ = {
@@ -304,6 +356,7 @@
 				239C2B8420542EA7006B1D46 /* Localizable.strings in Resources */,
 				239C2B6120542BA3006B1D46 /* Assets.xcassets in Resources */,
 				239C2B5F20542BA3006B1D46 /* Main.storyboard in Resources */,
+				239C2B9A2055E869006B1D46 /* CPSearchHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,8 +479,11 @@
 				239C2B5A20542BA3006B1D46 /* AppDelegate.swift in Sources */,
 				239C2B8D20549709006B1D46 /* CPRepository.swift in Sources */,
 				239C2B7D20542D91006B1D46 /* CPSearchVC.swift in Sources */,
+				239C2BA52055FEE7006B1D46 /* CPRepositoryCell.swift in Sources */,
+				239C2B972055E7F6006B1D46 /* CPSearchHeaderView.swift in Sources */,
 				239C2B8620542EEF006B1D46 /* Strings.swift in Sources */,
 				239C2B8F2054979F006B1D46 /* CPOwner.swift in Sources */,
+				239C2BA22055FCF8006B1D46 /* CPDateHelper.swift in Sources */,
 				239C2B8020542DBF006B1D46 /* UIViewController+(Alert).swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

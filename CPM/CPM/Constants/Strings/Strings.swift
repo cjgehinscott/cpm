@@ -11,5 +11,12 @@ import Foundation
 //MARK: - Storyboard IDs
 let kSearchVC = "CPSearchVC"
 
+//MARK: - Nib Names
+let kSearchHeaderViewNib = "CPSearchHeaderView"
+
+//MARK: - Reuse IDs
+let kSearchHeaderViewReuseId = "cpSearchHeaderViewId"
+let kRepositoryCellReuseId = "CPRepositoryCell"
+
 //MARK: - Localizable Keys
 let kLocalizableOK = "ok"

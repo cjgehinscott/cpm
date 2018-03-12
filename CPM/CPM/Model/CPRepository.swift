@@ -14,6 +14,9 @@ class CPRepository: NSObject {
     var name: String?
     var fullName: String?
     var language: String?
+    var mDescription: String?
+    var stars: Int?
+    var updatedAt: Date?
     var owner: CPOwner?
     
     convenience init?(dict: [String:Any?]?) {
@@ -22,6 +25,9 @@ class CPRepository: NSObject {
         self.name = dict?["name"] as? String
         self.fullName = dict?["full_name"] as? String
         self.language = dict?["language"] as? String
+        self.mDescription = dict?["description"] as? String
+        self.stars = dict?["stargazers_count"] as? Int
+        self.updatedAt = CPDateHelper.dateFromString(dateString: dict?["updated_at"] as? String) 
         self.owner = CPOwner(dict: dict?["owner"] as? [String:Any?])
     }
     
