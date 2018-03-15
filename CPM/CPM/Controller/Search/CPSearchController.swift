@@ -91,6 +91,10 @@ extension CPSearchController: UITableViewDataSource, UITableViewDelegate{
         cell.contentView.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
         cell.contentView.layer.shadowOpacity = 0.1
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        view?.searchBar?.resignFirstResponder()
+    }
 }
 
 extension CPSearchController: UISearchBarDelegate{
