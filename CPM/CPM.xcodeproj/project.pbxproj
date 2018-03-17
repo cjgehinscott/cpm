@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		131F7619F1A92D918993E528 /* Pods_CPM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCEF4C1AD603AE9AABE8957 /* Pods_CPM.framework */; };
+		231AA8C9205DB62D00AA5593 /* OauthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231AA8C8205DB62D00AA5593 /* OauthHelper.swift */; };
 		239C2B5A20542BA3006B1D46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C2B5920542BA3006B1D46 /* AppDelegate.swift */; };
 		239C2B5F20542BA3006B1D46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239C2B5D20542BA3006B1D46 /* Main.storyboard */; };
 		239C2B6120542BA3006B1D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 239C2B6020542BA3006B1D46 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		231AA8C8205DB62D00AA5593 /* OauthHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OauthHelper.swift; sourceTree = "<group>"; };
 		239C2B5620542BA3006B1D46 /* CPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		239C2B5920542BA3006B1D46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		239C2B5E20542BA3006B1D46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			children = (
 				239C2B8A205488C5006B1D46 /* APIManager.swift */,
 				239C2B9020549A6C006B1D46 /* CPError.swift */,
+				231AA8C8205DB62D00AA5593 /* OauthHelper.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				239C2B8B205488C5006B1D46 /* APIManager.swift in Sources */,
+				231AA8C9205DB62D00AA5593 /* OauthHelper.swift in Sources */,
 				239C2B9120549A6C006B1D46 /* CPError.swift in Sources */,
 				239C2B8820543380006B1D46 /* CPSearchController.swift in Sources */,
 				239C2B5A20542BA3006B1D46 /* AppDelegate.swift in Sources */,

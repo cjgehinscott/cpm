@@ -51,7 +51,6 @@ class CPSearchController: NSObject {
     func repositoriesByLanguageSortedByStars(language:String)->[CPRepository]?{
         return repositories?.filter({ $0.language ?? "" == language}).sorted(by: { $0.stars ?? 0 > $1.stars ?? 0})
     }
-
 }
 
 extension CPSearchController: UITableViewDataSource, UITableViewDelegate{

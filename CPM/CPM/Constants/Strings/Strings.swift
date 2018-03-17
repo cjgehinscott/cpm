@@ -20,3 +20,7 @@ let kRepositoryCellReuseId = "CPRepositoryCell"
 
 //MARK: - Localizable Keys
 let kLocalizableOK = "ok"
+
+//MARK: - UserDefault Keys
+let kBearerToken = "bearer"
+let kRefreshToken = "refresh"
