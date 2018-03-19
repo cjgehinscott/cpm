@@ -20,6 +20,10 @@ let kRepositoryCellReuseId = "CPRepositoryCell"
 
 //MARK: - Localizable Keys
 let kLocalizableOK = "ok"
+let kUnauthorizedTitle = "unauthorizedTitle"
+let kUnauthorizedMessage = "unauthorizedMessage"
+let kLogin = "login"
+let kCancel = "cancel"
 
 //MARK: - UserDefault Keys
 let kBearerToken = "bearer"

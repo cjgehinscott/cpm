@@ -38,8 +38,10 @@ class CPSearchController: NSObject {
                 /* We ignore 422 erorrs because the gitHub API returns this when, either the repos returned we do not have access to or they do not exist
                  * We also ignore cancelled data task responses because that is the response from the Data Task when we cancel an inflight request to start a new one and we don't need to tell the user about it
                  */
-                if error?.code != 422 && error?.message != "cancelled"{
+                if error?.code != 422 && error?.code != 401 && error?.message != "cancelled"{
                     self?.view?.showAlert(title: "\(error?.title ?? "") \(error?.code ?? 0)", message: error?.message)
+                }else if error?.code == 401{
+                    self?.view?.showUnauthorizedAlert()
                 }
                 
             }

@@ -19,6 +19,19 @@ extension UIViewController{
         }
     }
     
+    func showUnauthorizedAlert(){
+        let alert = UIAlertController(title: NSLocalizedString(kUnauthorizedTitle, comment: kUnauthorizedTitle), message: NSLocalizedString(kUnauthorizedMessage, comment: kUnauthorizedMessage), preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: NSLocalizedString(kCancel, comment: kCancel), style: .destructive, handler: nil)
+        let loginAction = UIAlertAction(title: NSLocalizedString(kLogin, comment: kLogin), style: .default) { action in
+            APIManager.shared.launchOauthAuthorization()
+        }
+        alert.addAction(cancelAction)
+        alert.addAction(loginAction)
+        DispatchQueue.main.async { [weak self] in
+            self?.present(alert, animated: true, completion: nil)
+        }
+    }
+    
     func setNetworkActivityIndicator(_ isVisible:Bool){
         DispatchQueue.main.async {
              UIApplication.shared.isNetworkActivityIndicatorVisible = isVisible

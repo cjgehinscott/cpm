@@ -30,7 +30,9 @@ class APIManager: NSObject {
     private func setAccessToken(with accessToken:String){
         UserDefaults.standard.set("Bearer \(accessToken)", forKey: kBearerToken)
     }
-    
+    /*
+     *  Begin the OAuth routing to GitHub via safari
+     */
     func launchOauthAuthorization(){
         guard let url = URL.init(string:"https://github.com/login/oauth/authorize?client_id=\(clientId)&scope=repo&state=TEST_STATE") else { return }
         if UIApplication.shared.canOpenURL(url){
@@ -56,7 +58,10 @@ class APIManager: NSObject {
             fetchAccessToken(with: receievedCode)
         }
     }
-    
+    /*
+     *  Fetch access token from GitHub after the redirect has been successfully received
+     *  @param code (required) returned in teh redirect url to obtain access token with
+     */
     func fetchAccessToken(with code: String){
         let accessTokenTask: URLSessionTask?
         guard let accessTokenUrl = URL.init(string:"https://github.com/login/oauth/access_token") else{ return }
@@ -64,7 +69,6 @@ class APIManager: NSObject {
         var urlRequest = URLRequest(url: accessTokenUrl)
         urlRequest.httpMethod = "POST"
         urlRequest.httpBody = postString.data(using: .utf8)
-        urlRequest.httpShouldHandleCookies = true
         accessTokenTask = session.dataTask(with: urlRequest, completionHandler: { [weak self] data, response, error in
             guard let data = data, error == nil else {
                 print(error?.localizedDescription ?? "nil error description")

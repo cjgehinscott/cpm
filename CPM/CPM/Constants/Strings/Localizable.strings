@@ -8,3 +8,8 @@
 
 //MARK: - Alerts
 "ok" = "OK";
+"unauthorizedTitle" = "Unauthorized";
+"unauthorizedMessage" = "You are not authorized to make this request, do you want to login?";
+"login" = "Login";
+"cancel" = "Cancel";
+
