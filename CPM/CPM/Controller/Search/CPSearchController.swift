@@ -10,8 +10,8 @@ import UIKit
 
 class CPSearchController: NSObject {
     
-    private var repositories: [CPRepository]?
-    private var languages: [(String,Int)]?{
+    var repositories: [CPRepository]?
+    var languages: [(String,Int)]?{
         guard let repos = repositories else { return nil }
         var languages = [(String,Int)]()
         for repo in repos{
